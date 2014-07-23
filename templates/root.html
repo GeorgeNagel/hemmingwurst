@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style>
+            body {
+                padding-bottom: 20px;
+            }
+            #content-box {
+                border: 1px solid #EEE;
+            }
+            .jumbotron hr {
+              border-color: #555;
+            }
+        </style>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    </head>
+    <body>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Hemmingwurst</h1><hr>
+        <h3>Hemmingwurst makes your text bolder and clearerer.</h3>
+        <p>Try below.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <button id="bolder">Bolder</button>
+      <button id="clearerer">Clearerer</button>
+      <div class="row">
+        <div id="content-box" contenteditable="true">
+          Click here to start typing.
+        </div>
+      </div>
+
+      <hr>
+
+      <footer>
+        <p>Check it out on <a href="http://www.github.com/">Github</a>.</p>
+      </footer>
+    </div> <!-- /container -->
+    <script>
+      $bolder_btn = $("#bolder");
+      $bolder_btn.click(function(){
+        alert("yo");
+      });
+      $clearerer_btn = $("#clearerer");
+      $clearerer_btn.click(function(){
+        alert("yosef");
+      });
+    </script>
+    </body>
+</html>
