@@ -14,9 +14,24 @@
             }
             #content-box {
                 border: 1px solid #EEE;
+                margin-top: 30px;
+                margin-bottom: 30px;
+                min-height: 400px;
+            }
+            #editable-box {
+              font-size: 20px;
+              width: 100%;
+              height: 400px;
+            }
+            .jumbotron {
+                margin-bottom: 0px;
             }
             .jumbotron hr {
-              border-color: #555;
+                border-color: #555;
+            }
+            #content-wrapper {
+                background-image: url(https://s3.amazonaws.com/ooomf-com-files/Vgu1RUfKT3WN1ZYxSWaR_14672519443_13d8873062_k.jpg);
+                background-size: cover;
             }
         </style>
         <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -28,34 +43,39 @@
       <div class="container">
         <h1>Hemmingwurst</h1><hr>
         <h3>Hemmingwurst makes your text bolder and clearerer.</h3>
-        <p>Try below.</p>
       </div>
     </div>
 
-    <div class="container">
-      <!-- Example row of columns -->
-      <button id="bolder">Bolder</button>
-      <button id="clearerer">Clearerer</button>
-      <div class="row">
-        <div id="content-box" contenteditable="true">
-          Click here to start typing.
+    <div id="content-wrapper">
+      <div class="container">
+        <div id="content-box">
+          <div id="editable-box" contenteditable="true">
+            <p>Click here to start typing.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet suscipit odio. Maecenas aliquet ipsum id dui accumsan, a fermentum arcu dapibus. Nulla rhoncus elementum viverra. Nullam iaculis elementum mollis. Donec pretium eu mi ut pharetra. Nunc aliquet egestas tristique. Pellentesque eget turpis libero. Donec sed ligula eget tellus varius sagittis. Suspendisse imperdiet ligula ut neque varius aliquam.</p>
+          </div>
         </div>
-      </div>
+        <button id="bolder" class="btn">Bolder</button>
+        <button id="clearerer" class="btn">Clearerer</button>
 
-      <hr>
+        <hr>
 
-      <footer>
-        <p>Check it out on <a href="http://www.github.com/">Github</a>.</p>
-      </footer>
-    </div> <!-- /container -->
+        <footer>
+          <p>Check it out on <a href="http://www.github.com/">Github</a>.</p>
+        </footer>
+      </div> <!-- /container -->
+    </div>
     <script>
+      opacity = 1;
       $bolder_btn = $("#bolder");
       $bolder_btn.click(function(){
-        alert("yo");
+        $editable_box = $("#editable-box");
+        $editable_box.css("font-weight", "Bold");
       });
       $clearerer_btn = $("#clearerer");
       $clearerer_btn.click(function(){
-        alert("yosef");
+        opacity *= .5;
+        $editable_box = $("#editable-box");
+        $editable_box.fadeTo(1, opacity);
       });
     </script>
     </body>
