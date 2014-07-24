@@ -9,14 +9,11 @@
 
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <style>
-            body {
-                padding-bottom: 20px;
-            }
             #content-box {
                 border: 1px solid #EEE;
                 margin-top: 30px;
-                margin-bottom: 30px;
-                min-height: 400px;
+                margin-bottom: 10px;
+                min-height: 300px;
             }
             #editable-box {
               font-size: 20px;
@@ -50,12 +47,16 @@
       <div class="container">
         <div id="content-box">
           <div id="editable-box" contenteditable="true">
-            <p>Click here to start typing.</p>
+            <p>Click here to start typing.</p><br />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet suscipit odio. Maecenas aliquet ipsum id dui accumsan, a fermentum arcu dapibus. Nulla rhoncus elementum viverra. Nullam iaculis elementum mollis. Donec pretium eu mi ut pharetra. Nunc aliquet egestas tristique. Pellentesque eget turpis libero. Donec sed ligula eget tellus varius sagittis. Suspendisse imperdiet ligula ut neque varius aliquam.</p>
           </div>
         </div>
-        <button id="bolder" class="btn">Bolder</button>
-        <button id="clearerer" class="btn">Clearerer</button>
+        <div class="row">
+          <div class="col-md-2 col-md-offset-5">
+            <button id="bolder" class="btn btn-default">Bolder</button>
+            <button id="clearerer" class="btn btn-default">Clearerer</button>
+          </div>
+        </div>
 
         <hr>
 
