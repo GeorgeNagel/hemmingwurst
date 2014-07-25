@@ -24,8 +24,8 @@ $ pip install -r requirements.txt
 ##Running the app locally
 ```
 # Inside the hemmingwurst app directory
-$ python main.py
-# Visit http://127.0.0.1:5000/
+$ foreman start
+# Visit http://0.0.0.0:5000/
 ```
 
 ##Credits
