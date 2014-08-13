@@ -30,6 +30,6 @@ $ foreman start
 
 ##Credits
 
-The original [Hemmingway App](http://www.hemingwayapp.com/).
+The original [Hemingway App](http://www.hemingwayapp.com/).
 
 Photo by [Leon Bliss](https://www.flickr.com/photos/leonbiss/) via [Unsplash](http://unsplash.com/).
